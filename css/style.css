@@ -1,6 +1,6 @@
 .inicial {
     width: 100%;
-    height: 94vh;
+    height: 100vh;
     background-image: url(https://images6.alphacoders.com/456/thumb-1920-456498.jpg);
     background-size: cover;
     background-attachment: fixed;
@@ -12,12 +12,13 @@
     .cap-op {
         width: 100%;
         height: 100%;
-        background-color: #4392dc6b;
+        background-color: #4392dccb;
         background-size: cover;
         background-attachment: fixed;
         display: flex;
         justify-content: center;
         justify-items: center;
+        
     }
 
     .cnt-home {
@@ -27,3 +28,67 @@
         color: #fff;
         text-align: center;
     }
+
+        .cnt-home .h1 {
+            font-size: 4em;
+        }
+
+.back-main {
+    background-color: #4392dc11;
+}
+
+    .main {
+        min-height: 100%;
+        background: #fff;
+    }
+
+    .main2 {
+        min-height: 100vh;
+        background-color: #4392dc;
+        color: #fff;
+    }
+
+        .skill {
+            box-shadow: -5px 0px 10px #2e2e2e;
+            /* height: 100vh; */
+        }
+
+        .h-100 {
+            height: 100vh;
+        }
+
+        .dp-fx {
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .txt-c {
+            text-align: center;
+        }
+
+        .txt-j {
+            text-align: justify;
+        }
+
+        .cont {
+            width: 85%;
+        }
+
+        .cl-b {
+            color: #4392dc;
+        }
+
+        .pht img {
+            height: 60px;
+        }
+
+        .photo img {
+            height: 300px;
+            width: 300px;
+            border-radius: 50%;
+            border: 1px solid #4392dc;
+            box-shadow: 8px 8px 15px #4392dc;
+        }
