@@ -48,6 +48,11 @@
         color: #fff;
     }
 
+    .main3 {
+        min-height: 100vh;
+        background-color: #fff;
+    }
+
         .skill {
             box-shadow: -5px 0px 10px #2e2e2e;
             /* height: 100vh; */
@@ -69,6 +74,10 @@
             text-align: center;
         }
 
+        .bxz-b {
+            box-shadow: 8px 8px 10px #4392dc;
+        }
+
         .txt-j {
             text-align: justify;
         }
@@ -83,6 +92,10 @@
 
         .pht img {
             height: 60px;
+        }
+
+        .phe img {
+            height: 150px;
         }
 
         .photo img {
