@@ -106,7 +106,7 @@
 }
 
 .card-project {
-    height: 350px;
+    height: 400px;
     box-shadow: 8px 8px 10px var(--page-gray);
 }
 
@@ -146,3 +146,84 @@
     background-color: var(--page-blue);
     border-radius: 10px;
 }
+
+.modal {
+    display: none; /* Oculto por defecto */
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4); /* Fondo semitransparente */
+  }
+
+  .modal-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+  }
+  
+  /* Contenido del modal */
+  .modal-content {
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 900px;
+    height: 90vh;
+    border-radius: 5px;
+    text-align: center;
+  }
+  
+  /* Botón de cerrar modal */
+  .close {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    border-radius: 50%;
+    background-color: #fd3737;
+    width: 40px;
+    height: 40px;
+    font-size: 40px;
+    color: #ddd;
+    font-weight: bold;
+    cursor: pointer;
+  }
+
+  
+  .close:hover,
+  .close:focus {
+    color: #fff;
+    background-color: #ff0000;
+    text-decoration: none;
+  }
+
+  .skills-logo {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .pht-logo-cont {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+
+  .container-habilidades-tec {
+    overflow-y: scroll;
+  }
+
+  .cont-skills-tec {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
