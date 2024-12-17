@@ -1,0 +1,131 @@
+:root {
+  --blue-lite: #7D90EF;
+  --blue-dark: #1849B1;
+  --white: #FFFFFF;
+  --dark: #000000;
+}
+
+.preview-body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.preview-izquierda,
+.preview-derecha {
+  position: absolute;
+  width: calc(100%);
+  height: calc(100%);
+}
+
+.preview-izquierda {
+  background-color: #7d90efb9;
+  z-index: -1;
+  border-top-right-radius: 100px;
+  animation: 2.5s forwards linear entradaIzq;
+  border: 5px solid #7D90EF;
+}
+
+.preview-derecha {
+  background-color: #1848b1e7;
+  z-index: -2;
+  border-bottom-left-radius: 100px;
+  animation: 2.5s forwards linear entradaDer;
+  border: 5px solid #1849B1;
+}
+
+.titulo-bienvenida {
+  color: var(--white);
+  font-size: 36px;
+  text-align: center;
+}
+
+.parrafo-bienvenida {
+  color: var(--white);
+  font-size: 20px;
+  text-align: center;
+}
+
+.preview-destello {
+  clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+  background-color: var(--white);
+  width: 0px;
+  height: 0px;
+  position: absolute;
+  animation: 5s forwards linear destello;
+}
+
+@keyframes entradaIzq {
+  0% {
+    bottom: calc(-100%);
+    left: calc(-100%);
+  }
+
+  70% {
+    bottom: calc(-25%);
+    left: calc(-25%);
+  }
+
+  85% {
+    bottom: calc(-30%);
+    left: calc(-30%);
+  }
+
+  100% {
+    bottom: calc(-25%);
+    left: calc(-25%);
+  }
+}
+
+@keyframes entradaDer {
+  from {
+    
+  }
+
+  to {
+    
+  }
+
+  0% {
+    top: calc(-100%);
+    right: calc(-100%);
+  }
+
+  70% {
+    top: calc(-25%);
+    right: calc(-25%);
+  }
+
+  85% {
+    top: calc(-30%);
+    right: calc(-30%);
+  }
+
+  100% {
+    top: calc(-25%);
+    right: calc(-25%);
+  }
+
+
+}
+
+@keyframes destello {
+  0% {
+    width: 0px;
+    height: 0px;
+  }
+
+  95% {
+    width: 0%;
+    height: 0%;
+  }
+
+  100% {
+    width: 1000%;
+    height: 1000%;
+  }
+}
